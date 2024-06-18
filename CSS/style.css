@@ -5,3 +5,43 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
+body {
+    background-color: #F5F5F1;
+    text-align: center;
+}
+
+#team-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    flex-wrap:wrap ;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding-bottom: 10px;
+    width: calc(100% / 3 - 10px);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    padding: 0.5em 0;
+}
+
+.card-p {
+    padding: 0.2em 0;
+}
+
+.header-container {
+    
+}
