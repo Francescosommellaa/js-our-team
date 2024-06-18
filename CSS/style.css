@@ -26,12 +26,15 @@ body {
     border: 1px solid #ddd;
     margin: 10px;
     padding-bottom: 10px;
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 3 - 30px);
     text-align: center;
+    border-radius: 8px;
 }
+
 .card img {
     width: 100%;
     height: auto;
+    border-radius: 8px 8px 0 0;
 }
 
 h2 {
@@ -43,5 +46,14 @@ h2 {
 }
 
 .header-container {
-    
+    width: 60%;
+    margin: 2em auto;
+}
+
+h3 {
+    padding-bottom: 1em;
+}
+
+.title-p {
+    line-height: 180%;
 }
