@@ -9,3 +9,15 @@ const teamMembers = [
     { name: 'Barbara Ramos', role:'Graphic Designer', image:'img/barbara-ramos-graphic-designer.jpg'}
 ];
 console.log(teamMembers);
+
+// Aggiunta di un elemento HTML per ogni membro del team al contenitore del team nel DOM
+teamMembers.forEach(member => {
+    // L'elemento HTML include un'immagine, un titolo con il nome del membro del team e un paragrafo con il ruolo del membro del team
+    document.getElementById('team-container').innerHTML += `
+        <div class="card">
+            <img src="${member.image}" alt="${member.name}">
+            <h2>${member.name}</h2>
+            <p class="card-p">${member.role}</p>
+        </div>
+    `;
+});
