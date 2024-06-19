@@ -11,13 +11,14 @@ const teamMembers = [
 console.log(teamMembers);
 
 // Aggiunta di un elemento HTML per ogni membro del team al contenitore del team nel DOM
-teamMembers.forEach(member => {
+for (let i = 0; i < teamMembers.length; i++) {
+    let member = teamMembers[i];
     // L'elemento HTML include un'immagine, un titolo con il nome del membro del team e un paragrafo con il ruolo del membro del team
     document.getElementById('team-container').innerHTML += `
         <div class="card">
             <img src="${member.image}" alt="${member.name}">
             <h2>${member.name}</h2>
-            <p class="card-p">${member.role}</p>
+            <span class="card-p">${member.role}</span>
         </div>
     `;
-});
+}
